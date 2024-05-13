@@ -20,12 +20,6 @@ app.use("/api/auth",authRoutes);
 app.use("/api/messages",messageRoutes);
 app.use("/api/users",userRoutes);
 
-/* app.get("/",(req , res) => {
-    // root route http://localhost:5000/
-    res.send(`Vanakam da mapla ${PORT} la irundhu`);
-});
- */
-
 app.listen(PORT,() => {
     connectToMongoDB();
     console.log(`Server is running on the port ${PORT}`);
