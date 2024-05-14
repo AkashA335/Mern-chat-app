@@ -27,3 +27,27 @@ body{
 ::-webkit-scrollbar-thumb:hover{
     background: #242424;
 }
+
+/* Pop Animation for realtime chat */
+.pop {
+    animation: pop 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+    transform-origin: center;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.3);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
